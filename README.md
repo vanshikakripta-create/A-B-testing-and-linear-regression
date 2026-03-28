@@ -4,11 +4,11 @@ The primary objective is to conduct a comparative analysis of two marketing camp
 **Project Process**
 
 The analysis follows a comprehensive data science workflow:<br>
- <u>1.Data Preparation & Cleaning:</u> Loading a dataset containing 365 days of 2019 data. This includes converting the "Date" column to the correct format and stripping currency ($) and percentage (%) symbols to transform categorical strings into float values for calculation.<br>
- <u>2.Exploratory Data Analysis (EDA):</u> Checking data distributions using histograms and subplots to ensure data symmetry and identify any outliers.<br>
- <u>3.Comparative Performance Analysis:</u> Categorizing daily conversions (e.g., "Less than 6," "10 to 15") and using side-by-side bar charts to visualize how often each platform hits specific performance tiers.<br>
+ <u>1.Data Preparation & Cleaning: </u> Loading a dataset containing 365 days of 2019 data. This includes converting the "Date" column to the correct format and stripping currency ($) and percentage (%) symbols to transform categorical strings into float values for calculation.<br>
+ <u>2.Exploratory Data Analysis (EDA): </u> Checking data distributions using histograms and subplots to ensure data symmetry and identify any outliers.<br>
+ <u>3.Comparative Performance Analysis: </u> Categorizing daily conversions (e.g., "Less than 6," "10 to 15") and using side-by-side bar charts to visualize how often each platform hits specific performance tiers.<br>
 Statistical Validation: Moving beyond simple observation to use statistical tests to confirm if the differences in performance are mathematically significant.<br>
- <u>4.Predictive Modeling:</u> Building a model based on the "best" performing campaign to forecast future results.
+ <u>4.Predictive Modeling: </u> Building a model based on the "best" performing campaign to forecast future results.
  <u>5.Trend & Cost Analysis:</u> Examining performance across different timeframes (weekly and monthly) and calculating the Cost Per Conversion (CPC) to measure actual efficiency.
 
 **Techniques Used**
