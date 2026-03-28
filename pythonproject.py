@@ -156,7 +156,7 @@ plt.figure(figsize=(8,6))
 sns.scatterplot(x = df['Facebook Ad Clicks'],y = df['Facebook Ad Conversions'], color = '#03989E', label = 'Actual data points')
 plt.plot(df['Facebook Ad Clicks'], prediction, color = '#A62372', label = 'Best fit line')
 plt.legend()
-plt.show()
+#plt.show()
 plt.tight_layout()
 plt.savefig('images/05_facebook_regression.png', dpi=300, bbox_inches='tight', facecolor='white')
 print(f'For {50} Clicks, Expected Conversion : {round(reg_model.predict([[50]])[0][0],2)}')
@@ -190,7 +190,7 @@ plt.title('Monthly Conversions')
 monthly_conversion = df.groupby('month')[['Facebook Ad Conversions']].sum()
 month_names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 plt.plot(month_names, monthly_conversion['Facebook Ad Conversions'],'-o', color = '#A62372')
-plt.show()
+#plt.show()
 plt.tight_layout()
 plt.savefig('images/06_weekly_conversions.png', dpi=300, bbox_inches='tight', facecolor='white')
 plt.tight_layout()
@@ -203,9 +203,11 @@ plt.title('Monthly Cost Per Conversion (CPC)')
 monthly_df = df.groupby('month')[['Facebook Ad Conversions','Cost per Facebook Ad']].sum()
 monthly_df['Cost per Conversion'] = monthly_df['Cost per Facebook Ad']/monthly_df['Facebook Ad Conversions']
 plt.plot(month_names, monthly_df['Cost per Conversion'],'-o', color = '#A62372')
-plt.show()
+#plt.show()
 plt.tight_layout()
 plt.savefig('images/08_monthly_cpc.png', dpi=300, bbox_inches='tight', facecolor='white')
+plt.show()
+
 '''The CPC trend remains relatively stable over 12 months, with May and November showing the lowest values, indicating more cost-effective advertising periods. 
 February records the highest CPC, reflecting higher ad costs. Allocating more budget to low-CPC months like May and November could help maximize ROI.'''
 #Is there a long-term equilibrium relationship between advertising spend and conversion rates that suggests a stable, proportional impact of budget changes on conversions over time?
